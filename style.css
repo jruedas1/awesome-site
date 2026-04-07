@@ -1,0 +1,17 @@
+:root {
+    --main-background: #F1EEEB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    background: var(--main-background);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
