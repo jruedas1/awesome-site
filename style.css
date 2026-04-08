@@ -34,3 +34,14 @@ main {
     gap: 1rem;
 }
 
+section {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid rgba(222, 235, 237, 100);
+    background-color: rgba(246, 247, 244, 30);;
+    border-radius: 0.5rem;
+}
+
