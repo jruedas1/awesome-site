@@ -1,13 +1,47 @@
-/* css resets
-    -- no default margins
-    -- border box box-sizing
- */
+:root {
+    --main-background: #F1EEEB;
+}
 
 * {
-    box-sizing: border-box;
-    margin: 0
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    background: var(--main-background);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+header h1 {
+    font-weight: 350;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 80%;
+    gap: 1rem;
+}
+
+section {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid rgba(222, 235, 237, 100);
+    background-color: rgba(246, 247, 244, 30);;
+    border-radius: 0.5rem;
+}
+
