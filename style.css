@@ -28,20 +28,36 @@ header h1 {
 
 main {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    width: 80%;
+    flex-flow: row wrap;
     gap: 1rem;
+    width: 80%;
 }
 
 section {
+    flex: 0 1 calc(33.3% - 1rem);
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
     align-items: center;
     padding: 1rem;
-    border: 1px solid rgba(222, 235, 237, 100);
+    border: 1px solid rgba(246, 247, 244, 100);
     background-color: rgba(246, 247, 244, 30);;
     border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 992px) {
+    section {
+        flex-basis: 43%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    section {
+        flex: 1 1 auto;
+    }
 }
 
